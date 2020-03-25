@@ -1,0 +1,24 @@
+/**40deg */
+.test {
+  test: 8;
+}
+
+.el {
+  background-color: lightgray;
+}
+
+.el--alkaliMetal {
+  background-color: red;
+}
+
+.el--lanthanide {
+  background-color: red;
+}
+
+.el--nobleGas {
+  background-color: red;
+}
+
+.el--transitionMetal {
+  background-color: red;
+}

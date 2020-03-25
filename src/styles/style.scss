@@ -1,0 +1,23 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+$types: alkaliMetal lanthanide nobleGas transitionMetal postTransitionMetal
+  alkalineEarthMetal actinide metalloid otherNonMetal;
+$length: length($types);
+$step: 360deg / length($types);
+
+.test {
+  test: index($types, metalloid);
+}
+.el {
+  background-color: lightgray;
+}
+
+@each $type in $types {
+  .el--#{$type} {
+    $index: index($types, $type);
+    background-color: hsl($step * $index, 80%，80%);
+  }
+}
